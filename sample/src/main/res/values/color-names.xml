@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- red -->
+    <string name="md_red">Red</string>
+    <string name="md_red_50_color_name">50</string>
+    <string name="md_red_100_color_name">100</string>
+    <string name="md_red_200_color_name">200</string>
+    <string name="md_red_300_color_name">300</string>
+    <string name="md_red_400_color_name">400</string>
+    <string name="md_red_500_color_name">500</string>
+    <string name="md_red_600_color_name">600</string>
+    <string name="md_red_700_color_name">700</string>
+    <string name="md_red_800_color_name">800</string>
+    <string name="md_red_900_color_name">900</string>
+    <string name="md_red_a100_color_name">A100</string>
+    <string name="md_red_a200_color_name">A200</string>
+    <string name="md_red_a400_color_name">A400</string>
+    <string name="md_red_a700_color_name">A700</string>
+
+    <!-- pink -->
+    <string name="md_pink">Pink</string>
+    <string name="md_pink_50_color_name">50</string>
+    <string name="md_pink_100_color_name">100</string>
+    <string name="md_pink_200_color_name">200</string>
+    <string name="md_pink_300_color_name">300</string>
+    <string name="md_pink_400_color_name">400</string>
+    <string name="md_pink_500_color_name">500</string>
+    <string name="md_pink_600_color_name">600</string>
+    <string name="md_pink_700_color_name">700</string>
+    <string name="md_pink_800_color_name">800</string>
+    <string name="md_pink_900_color_name">900</string>
+    <string name="md_pink_a100_color_name">A100</string>
+    <string name="md_pink_a200_color_name">A200</string>
+    <string name="md_pink_a400_color_name">A400</string>
+    <string name="md_pink_a700_color_name">A700</string>
+
+    <!-- purple -->
+    <string name="md_purple">Purple</string>
+    <string name="md_purple_50_color_name">50</string>
+    <string name="md_purple_100_color_name">100</string>
+    <string name="md_purple_200_color_name">200</string>
+    <string name="md_purple_300_color_name">300</string>
+    <string name="md_purple_400_color_name">400</string>
+    <string name="md_purple_500_color_name">500</string>
+    <string name="md_purple_600_color_name">600</string>
+    <string name="md_purple_700_color_name">700</string>
+    <string name="md_purple_800_color_name">800</string>
+    <string name="md_purple_900_color_name">900</string>
+    <string name="md_purple_a100_color_name">A100</string>
+    <string name="md_purple_a200_color_name">A200</string>
+    <string name="md_purple_a400_color_name">A400</string>
+    <string name="md_purple_a700_color_name">A700</string>
+
+    <!-- deep_purple -->
+    <string name="md_deep_purple">Deep Purple</string>
+    <string name="md_deep_purple_50_color_name">50</string>
+    <string name="md_deep_purple_100_color_name">100</string>
+    <string name="md_deep_purple_200_color_name">200</string>
+    <string name="md_deep_purple_300_color_name">300</string>
+    <string name="md_deep_purple_400_color_name">400</string>
+    <string name="md_deep_purple_500_color_name">500</string>
+    <string name="md_deep_purple_600_color_name">600</string>
+    <string name="md_deep_purple_700_color_name">700</string>
+    <string name="md_deep_purple_800_color_name">800</string>
+    <string name="md_deep_purple_900_color_name">900</string>
+    <string name="md_deep_purple_a100_color_name">A100</string>
+    <string name="md_deep_purple_a200_color_name">A200</string>
+    <string name="md_deep_purple_a400_color_name">A400</string>
+    <string name="md_deep_purple_a700_color_name">A700</string>
+
+    <!-- indigo -->
+    <string name="md_indigo">Indigo</string>
+    <string name="md_indigo_50_color_name">50</string>
+    <string name="md_indigo_100_color_name">100</string>
+    <string name="md_indigo_200_color_name">200</string>
+    <string name="md_indigo_300_color_name">300</string>
+    <string name="md_indigo_400_color_name">400</string>
+    <string name="md_indigo_500_color_name">500</string>
+    <string name="md_indigo_600_color_name">600</string>
+    <string name="md_indigo_700_color_name">700</string>
+    <string name="md_indigo_800_color_name">800</string>
+    <string name="md_indigo_900_color_name">900</string>
+    <string name="md_indigo_a100_color_name">A100</string>
+    <string name="md_indigo_a200_color_name">A200</string>
+    <string name="md_indigo_a400_color_name">A400</string>
+    <string name="md_indigo_a700_color_name">A700</string>
+
+    <!-- blue -->
+    <string name="md_blue">Blue</string>
+    <string name="md_blue_50_color_name">50</string>
+    <string name="md_blue_100_color_name">100</string>
+    <string name="md_blue_200_color_name">200</string>
+    <string name="md_blue_300_color_name">300</string>
+    <string name="md_blue_400_color_name">400</string>
+    <string name="md_blue_500_color_name">500</string>
+    <string name="md_blue_600_color_name">600</string>
+    <string name="md_blue_700_color_name">700</string>
+    <string name="md_blue_800_color_name">800</string>
+    <string name="md_blue_900_color_name">900</string>
+    <string name="md_blue_a100_color_name">A100</string>
+    <string name="md_blue_a200_color_name">A200</string>
+    <string name="md_blue_a400_color_name">A400</string>
+    <string name="md_blue_a700_color_name">A700</string>
+
+    <!-- light_blue -->
+    <string name="md_light_blue">Light Blue</string>
+    <string name="md_light_blue_50_color_name">50</string>
+    <string name="md_light_blue_100_color_name">100</string>
+    <string name="md_light_blue_200_color_name">200</string>
+    <string name="md_light_blue_300_color_name">300</string>
+    <string name="md_light_blue_400_color_name">400</string>
+    <string name="md_light_blue_500_color_name">500</string>
+    <string name="md_light_blue_600_color_name">600</string>
+    <string name="md_light_blue_700_color_name">700</string>
+    <string name="md_light_blue_800_color_name">800</string>
+    <string name="md_light_blue_900_color_name">900</string>
+    <string name="md_light_blue_a100_color_name">A100</string>
+    <string name="md_light_blue_a200_color_name">A200</string>
+    <string name="md_light_blue_a400_color_name">A400</string>
+    <string name="md_light_blue_a700_color_name">A700</string>
+
+    <!-- cyan -->
+    <string name="md_cyan">Cyan</string>
+    <string name="md_cyan_50_color_name">50</string>
+    <string name="md_cyan_100_color_name">100</string>
+    <string name="md_cyan_200_color_name">200</string>
+    <string name="md_cyan_300_color_name">300</string>
+    <string name="md_cyan_400_color_name">400</string>
+    <string name="md_cyan_500_color_name">500</string>
+    <string name="md_cyan_600_color_name">600</string>
+    <string name="md_cyan_700_color_name">700</string>
+    <string name="md_cyan_800_color_name">800</string>
+    <string name="md_cyan_900_color_name">900</string>
+    <string name="md_cyan_a100_color_name">A100</string>
+    <string name="md_cyan_a200_color_name">A200</string>
+    <string name="md_cyan_a400_color_name">A400</string>
+    <string name="md_cyan_a700_color_name">A700</string>
+
+    <!-- teal -->
+    <string name="md_teal">Teal</string>
+    <string name="md_teal_50_color_name">50</string>
+    <string name="md_teal_100_color_name">100</string>
+    <string name="md_teal_200_color_name">200</string>
+    <string name="md_teal_300_color_name">300</string>
+    <string name="md_teal_400_color_name">400</string>
+    <string name="md_teal_500_color_name">500</string>
+    <string name="md_teal_600_color_name">600</string>
+    <string name="md_teal_700_color_name">700</string>
+    <string name="md_teal_800_color_name">800</string>
+    <string name="md_teal_900_color_name">900</string>
+    <string name="md_teal_a100_color_name">A100</string>
+    <string name="md_teal_a200_color_name">A200</string>
+    <string name="md_teal_a400_color_name">A400</string>
+    <string name="md_teal_a700_color_name">A700</string>
+
+    <!-- green -->
+    <string name="md_green">Green</string>
+    <string name="md_green_50_color_name">50</string>
+    <string name="md_green_100_color_name">100</string>
+    <string name="md_green_200_color_name">200</string>
+    <string name="md_green_300_color_name">300</string>
+    <string name="md_green_400_color_name">400</string>
+    <string name="md_green_500_color_name">500</string>
+    <string name="md_green_600_color_name">600</string>
+    <string name="md_green_700_color_name">700</string>
+    <string name="md_green_800_color_name">800</string>
+    <string name="md_green_900_color_name">900</string>
+    <string name="md_green_a100_color_name">A100</string>
+    <string name="md_green_a200_color_name">A200</string>
+    <string name="md_green_a400_color_name">A400</string>
+    <string name="md_green_a700_color_name">A700</string>
+
+    <!-- light_green -->
+    <string name="md_light_green">Light Green</string>
+    <string name="md_light_green_50_color_name">50</string>
+    <string name="md_light_green_100_color_name">100</string>
+    <string name="md_light_green_200_color_name">200</string>
+    <string name="md_light_green_300_color_name">300</string>
+    <string name="md_light_green_400_color_name">400</string>
+    <string name="md_light_green_500_color_name">500</string>
+    <string name="md_light_green_600_color_name">600</string>
+    <string name="md_light_green_700_color_name">700</string>
+    <string name="md_light_green_800_color_name">800</string>
+    <string name="md_light_green_900_color_name">900</string>
+    <string name="md_light_green_a100_color_name">A100</string>
+    <string name="md_light_green_a200_color_name">A200</string>
+    <string name="md_light_green_a400_color_name">A400</string>
+    <string name="md_light_green_a700_color_name">A700</string>
+
+    <!-- lime -->
+    <string name="md_lime">Lime</string>
+    <string name="md_lime_50_color_name">50</string>
+    <string name="md_lime_100_color_name">100</string>
+    <string name="md_lime_200_color_name">200</string>
+    <string name="md_lime_300_color_name">300</string>
+    <string name="md_lime_400_color_name">400</string>
+    <string name="md_lime_500_color_name">500</string>
+    <string name="md_lime_600_color_name">600</string>
+    <string name="md_lime_700_color_name">700</string>
+    <string name="md_lime_800_color_name">800</string>
+    <string name="md_lime_900_color_name">900</string>
+    <string name="md_lime_a100_color_name">A100</string>
+    <string name="md_lime_a200_color_name">A200</string>
+    <string name="md_lime_a400_color_name">A400</string>
+    <string name="md_lime_a700_color_name">A700</string>
+
+    <!-- yellow -->
+    <string name="md_yellow">Yellow</string>
+    <string name="md_yellow_50_color_name">50</string>
+    <string name="md_yellow_100_color_name">100</string>
+    <string name="md_yellow_200_color_name">200</string>
+    <string name="md_yellow_300_color_name">300</string>
+    <string name="md_yellow_400_color_name">400</string>
+    <string name="md_yellow_500_color_name">500</string>
+    <string name="md_yellow_600_color_name">600</string>
+    <string name="md_yellow_700_color_name">700</string>
+    <string name="md_yellow_800_color_name">800</string>
+    <string name="md_yellow_900_color_name">900</string>
+    <string name="md_yellow_a100_color_name">A100</string>
+    <string name="md_yellow_a200_color_name">A200</string>
+    <string name="md_yellow_a400_color_name">A400</string>
+    <string name="md_yellow_a700_color_name">A700</string>
+
+    <!-- amber -->
+    <string name="md_amber">Amber</string>
+    <string name="md_amber_50_color_name">50</string>
+    <string name="md_amber_100_color_name">100</string>
+    <string name="md_amber_200_color_name">200</string>
+    <string name="md_amber_300_color_name">300</string>
+    <string name="md_amber_400_color_name">400</string>
+    <string name="md_amber_500_color_name">500</string>
+    <string name="md_amber_600_color_name">600</string>
+    <string name="md_amber_700_color_name">700</string>
+    <string name="md_amber_800_color_name">800</string>
+    <string name="md_amber_900_color_name">900</string>
+    <string name="md_amber_a100_color_name">A100</string>
+    <string name="md_amber_a200_color_name">A200</string>
+    <string name="md_amber_a400_color_name">A400</string>
+    <string name="md_amber_a700_color_name">A700</string>
+
+    <!-- orange -->
+    <string name="md_orange">Orange</string>
+    <string name="md_orange_50_color_name">50</string>
+    <string name="md_orange_100_color_name">100</string>
+    <string name="md_orange_200_color_name">200</string>
+    <string name="md_orange_300_color_name">300</string>
+    <string name="md_orange_400_color_name">400</string>
+    <string name="md_orange_500_color_name">500</string>
+    <string name="md_orange_600_color_name">600</string>
+    <string name="md_orange_700_color_name">700</string>
+    <string name="md_orange_800_color_name">800</string>
+    <string name="md_orange_900_color_name">900</string>
+    <string name="md_orange_a100_color_name">A100</string>
+    <string name="md_orange_a200_color_name">A200</string>
+    <string name="md_orange_a400_color_name">A400</string>
+    <string name="md_orange_a700_color_name">A700</string>
+
+    <!-- deep_orange -->
+    <string name="md_deep_orange">Deep Orange</string>
+    <string name="md_deep_orange_50_color_name">50</string>
+    <string name="md_deep_orange_100_color_name">100</string>
+    <string name="md_deep_orange_200_color_name">200</string>
+    <string name="md_deep_orange_300_color_name">300</string>
+    <string name="md_deep_orange_400_color_name">400</string>
+    <string name="md_deep_orange_500_color_name">500</string>
+    <string name="md_deep_orange_600_color_name">600</string>
+    <string name="md_deep_orange_700_color_name">700</string>
+    <string name="md_deep_orange_800_color_name">800</string>
+    <string name="md_deep_orange_900_color_name">900</string>
+    <string name="md_deep_orange_a100_color_name">A100</string>
+    <string name="md_deep_orange_a200_color_name">A200</string>
+    <string name="md_deep_orange_a400_color_name">A400</string>
+    <string name="md_deep_orange_a700_color_name">A700</string>
+
+    <!-- brown -->
+    <string name="md_brown">Brown</string>
+    <string name="md_brown_50_color_name">50</string>
+    <string name="md_brown_100_color_name">100</string>
+    <string name="md_brown_200_color_name">200</string>
+    <string name="md_brown_300_color_name">300</string>
+    <string name="md_brown_400_color_name">400</string>
+    <string name="md_brown_500_color_name">500</string>
+    <string name="md_brown_600_color_name">600</string>
+    <string name="md_brown_700_color_name">700</string>
+    <string name="md_brown_800_color_name">800</string>
+    <string name="md_brown_900_color_name">900</string>
+
+    <!-- grey -->
+    <string name="md_grey">Grey</string>
+    <string name="md_grey_50_color_name">50</string>
+    <string name="md_grey_100_color_name">100</string>
+    <string name="md_grey_200_color_name">200</string>
+    <string name="md_grey_300_color_name">300</string>
+    <string name="md_grey_400_color_name">400</string>
+    <string name="md_grey_500_color_name">500</string>
+    <string name="md_grey_600_color_name">600</string>
+    <string name="md_grey_700_color_name">700</string>
+    <string name="md_grey_800_color_name">800</string>
+    <string name="md_grey_900_color_name">900</string>
+    <string name="md_black_color_name">1000</string>
+    <string name="md_white_color_name">1000</string>
+
+    <!-- blue_grey -->
+    <string name="md_blue_grey">Blue Grey</string>
+    <string name="md_blue_grey_50_color_name">50</string>
+    <string name="md_blue_grey_100_color_name">100</string>
+    <string name="md_blue_grey_200_color_name">200</string>
+    <string name="md_blue_grey_300_color_name">300</string>
+    <string name="md_blue_grey_400_color_name">400</string>
+    <string name="md_blue_grey_500_color_name">500</string>
+    <string name="md_blue_grey_600_color_name">600</string>
+    <string name="md_blue_grey_700_color_name">700</string>
+    <string name="md_blue_grey_800_color_name">800</string>
+    <string name="md_blue_grey_900_color_name">900</string>
+</resources>
