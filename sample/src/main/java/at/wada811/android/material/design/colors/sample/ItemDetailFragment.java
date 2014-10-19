@@ -1,6 +1,7 @@
 package at.wada811.android.material.design.colors.sample;
 
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.ListFragment;
 import android.view.View;
 import java.util.List;
@@ -17,8 +18,8 @@ public class ItemDetailFragment extends ListFragment{
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState){
-        super.onCreate(savedInstanceState);
+    public void onActivityCreated(@Nullable Bundle savedInstanceState){
+        super.onActivityCreated(savedInstanceState);
 
         if(getArguments().containsKey(ARG_ITEM_ID)){
             MaterialDesignColor color = ColorPalette.ITEMS.get(
@@ -27,7 +28,10 @@ public class ItemDetailFragment extends ListFragment{
                 )
             );
             items = ColorPalette.ITEM_MAP.get(color);
-            setListAdapter(new ItemDetailAdapter(getActivity(), items));
+
+            View view = new View(getActivity());
+            getListView().addHeaderView(view);
+            setListAdapter(new ItemAdapter(getActivity(), items));
         }
     }
 

@@ -9,16 +9,16 @@ import android.widget.TextView;
 import java.util.List;
 import at.wada811.android.material.design.colors.sample.color.MaterialDesignColor;
 
-public class ItemDetailAdapter extends BindableAdapter<MaterialDesignColor>{
+public class ItemAdapter extends BindableAdapter<MaterialDesignColor>{
 
 
-    public ItemDetailAdapter(Context context, List<MaterialDesignColor> items){
+    public ItemAdapter(Context context, List<MaterialDesignColor> items){
         super(context, items);
     }
 
     @Override
     public View newView(LayoutInflater inflater, int position, ViewGroup container){
-        View view = inflater.inflate(R.layout.list_item_list, container, false);
+        View view = inflater.inflate(R.layout.list_item, container, false);
         ViewHolder holder = new ViewHolder(view);
         view.setTag(holder);
         return view;
