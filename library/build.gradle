@@ -29,7 +29,7 @@ uploadArchives {
     repositories {
         mavenDeployer {
             repository url: "file://${repo.absolutePath}"
-            pom.version = '1.0.0'
+            pom.version = '1.1.0'
             pom.groupId = 'at.wada811'
             pom.artifactId = 'android-material-design-colors'
         }
