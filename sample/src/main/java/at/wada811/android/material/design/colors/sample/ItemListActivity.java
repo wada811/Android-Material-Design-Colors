@@ -13,16 +13,15 @@ import at.wada811.android.material.design.colors.sample.color.MaterialDesignColo
 
 public class ItemListActivity extends ActionBarActivity implements ItemListFragment.Callbacks{
 
-    private boolean mTwoPane;
+    private boolean isTwoPane;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_item_list);
 
-        if(findViewById(R.id.item_detail_container) != null){
-            mTwoPane = true;
-
+        isTwoPane = getResources().getBoolean(R.bool.isTwoPane);
+        if(isTwoPane){
             getSupportActionBar().setDisplayShowHomeEnabled(false);
             getSupportActionBar().setDisplayUseLogoEnabled(false);
 
@@ -35,14 +34,14 @@ public class ItemListActivity extends ActionBarActivity implements ItemListFragm
 
     @Override
     public void onItemSelected(int position){
-        if(mTwoPane){
+        if(isTwoPane){
 
             MaterialDesignColor color = ColorPalette.ITEMS.get(position);
             String titleText = getResources().getString(color.getColorName());
             int textColor = getResources().getColor(color.getTextColor());
             int hexColor = (0xFFFFFF & Color.argb(0, Color.red(textColor), Color.green(textColor), Color.blue(textColor)));
             String htmlColor = String.format(Locale.US, "#%06X", hexColor);
-            String titleHtml = "<font color=\"" + htmlColor +  "\">" + titleText + "</font>";
+            String titleHtml = "<font color=\"" + htmlColor + "\">" + titleText + "</font>";
             getSupportActionBar().setTitle(Html.fromHtml(titleHtml));
             getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(color.getColor())));
 

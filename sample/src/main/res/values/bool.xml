@@ -1,0 +1,3 @@
+<resources>
+    <bool name="isTwoPane">false</bool>
+</resources>
