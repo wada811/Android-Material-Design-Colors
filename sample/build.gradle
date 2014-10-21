@@ -8,13 +8,29 @@ android {
         applicationId "at.wada811.android.material.design.colors.sample"
         minSdkVersion 8
         targetSdkVersion 21
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "1.1.0"
+    }
+    signingConfigs {
+        release
     }
     buildTypes {
         release {
             runProguard true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+
+    applicationVariants.all { variant ->
+        if (variant.buildType.name.equals("release")) {
+            def file = variant.outputFile
+            def applicationId = defaultConfig.applicationId
+            def versionCode = defaultConfig.versionCode
+            def versionName = defaultConfig.versionName
+            def date = new java.text.SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date())
+            def newName = "${applicationId}_r${versionCode}_v${versionName}_${date}.apk"
+            variant.outputFile = new File(file.parent, newName)
         }
     }
 }
@@ -23,4 +39,18 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:21+'
     compile project(':library')
+}
+
+
+if (project.hasProperty('storeFile')) {
+    android.signingConfigs.release.storeFile = new File(System.getenv('HOME'), storeFile)
+}
+if (project.hasProperty('storePassword')) {
+    android.signingConfigs.release.storePassword = storePassword
+}
+if (project.hasProperty('keyAlias')) {
+    android.signingConfigs.release.keyAlias = keyAlias
+}
+if (project.hasProperty('keyPassword')) {
+    android.signingConfigs.release.keyPassword = keyPassword
 }
