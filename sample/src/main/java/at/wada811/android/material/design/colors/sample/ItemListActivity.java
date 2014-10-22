@@ -18,9 +18,10 @@ public class ItemListActivity extends ActionBarActivity implements ItemListFragm
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_item_list);
 
         isTwoPane = getResources().getBoolean(R.bool.isTwoPane);
+        setContentView(isTwoPane ? R.layout.activity_item_twopane : R.layout.activity_item_list);
+
         if(isTwoPane){
             getSupportActionBar().setDisplayShowHomeEnabled(false);
             getSupportActionBar().setDisplayUseLogoEnabled(false);
