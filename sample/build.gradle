@@ -24,13 +24,17 @@ android {
 
     applicationVariants.all { variant ->
         if (variant.buildType.name.equals("release")) {
-            def file = variant.outputFile
-            def applicationId = defaultConfig.applicationId
-            def versionCode = defaultConfig.versionCode
-            def versionName = defaultConfig.versionName
-            def date = new java.text.SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date())
-            def newName = "${applicationId}_r${versionCode}_v${versionName}_${date}.apk"
-            variant.outputFile = new File(file.parent, newName)
+            variant.outputs.each { output ->
+                if (output.outputFile != null && output.outputFile.name.endsWith('.apk')) {
+                    // Rename APK
+                    def applicationId = defaultConfig.applicationId
+                    def versionCode = defaultConfig.versionCode
+                    def versionName = defaultConfig.versionName
+                    def date = new java.text.SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date())
+                    def newName = "${applicationId}_r${versionCode}_v${versionName}_${date}.apk"
+                    output.outputFile = new File(output.outputFile.parent, newName)
+                }
+            }
         }
     }
 }
