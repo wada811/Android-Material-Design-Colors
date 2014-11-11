@@ -31,7 +31,7 @@ public class ItemDetailFragment extends ListFragment{
 
             View view = new View(getActivity());
             getListView().addHeaderView(view);
-            setListAdapter(new ItemAdapter(getActivity(), items));
+            setListAdapter(new ItemDetailAdapter(getActivity(), items));
         }
     }
 

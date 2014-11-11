@@ -33,7 +33,7 @@ public class ItemListFragment extends ListFragment{
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
 
-        setListAdapter(new ItemAdapter(getActivity(), ColorPalette.ITEMS));
+        setListAdapter(new ItemListAdapter(getActivity(), ColorPalette.ITEMS));
     }
 
     @Override
