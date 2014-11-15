@@ -29,8 +29,6 @@ public class ItemDetailFragment extends ListFragment{
             ColorGroup color = ColorPalette.ITEMS.get(getArguments().getInt(ARG_ITEM_ID));
             List<MaterialDesignColor> items = ColorPalette.ITEM_MAP.get(color);
 
-            View view = new View(getActivity());
-            getListView().addHeaderView(view);
             setListAdapter(new ItemDetailAdapter(getActivity(), items));
         }
     }
