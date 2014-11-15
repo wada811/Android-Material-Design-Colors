@@ -16,8 +16,6 @@ public class ItemDetailFragment extends ListFragment{
 
     public static final String ARG_ITEM_ID = "item_id";
 
-    private List<MaterialDesignColor> items;
-
     public ItemDetailFragment(){
     }
 
@@ -44,7 +42,8 @@ public class ItemDetailFragment extends ListFragment{
     @Override
     public void onListItemClick(ListView listView, View view, int position, long id){
         super.onListItemClick(listView, view, position, id);
-        MaterialDesignColor color = items.get(position);
+
+        MaterialDesignColor color = (MaterialDesignColor)listView.getItemAtPosition(position);
         String colorCode = getString(color.getColorCode());
         copyText(getActivity(), colorCode);
         Toast.makeText(getActivity(), "Copied color code: " + colorCode, Toast.LENGTH_SHORT).show();
