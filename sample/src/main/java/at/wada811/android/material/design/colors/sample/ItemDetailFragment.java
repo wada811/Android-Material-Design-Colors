@@ -6,6 +6,7 @@ import android.support.v4.app.ListFragment;
 import android.view.View;
 import java.util.List;
 import at.wada811.android.material.design.colors.sample.color.ColorPalette;
+import at.wada811.android.material.design.colors.sample.color.ColorPalette.ColorGroup;
 import at.wada811.android.material.design.colors.sample.color.MaterialDesignColor;
 
 public class ItemDetailFragment extends ListFragment{
@@ -22,12 +23,8 @@ public class ItemDetailFragment extends ListFragment{
         super.onActivityCreated(savedInstanceState);
 
         if(getArguments().containsKey(ARG_ITEM_ID)){
-            MaterialDesignColor color = ColorPalette.ITEMS.get(
-                getArguments().getInt(
-                    ARG_ITEM_ID
-                )
-            );
-            items = ColorPalette.ITEM_MAP.get(color);
+            ColorGroup color = ColorPalette.ITEMS.get(getArguments().getInt(ARG_ITEM_ID));
+            List<MaterialDesignColor> items = ColorPalette.ITEM_MAP.get(color);
 
             View view = new View(getActivity());
             getListView().addHeaderView(view);

@@ -10,7 +10,7 @@ import android.text.Html;
 import android.view.MenuItem;
 import java.util.Locale;
 import at.wada811.android.material.design.colors.sample.color.ColorPalette;
-import at.wada811.android.material.design.colors.sample.color.MaterialDesignColor;
+import at.wada811.android.material.design.colors.sample.color.ColorPalette.ColorGroup;
 
 public class ItemDetailActivity extends ActionBarActivity {
 
@@ -26,7 +26,7 @@ public class ItemDetailActivity extends ActionBarActivity {
 
         if (savedInstanceState == null) {
             int position = getIntent().getIntExtra(ItemDetailFragment.ARG_ITEM_ID, 0);
-            MaterialDesignColor color = ColorPalette.ITEMS.get(position);
+            ColorGroup color = ColorPalette.ITEMS.get(position);
             String titleText = getResources().getString(color.getColorName());
             int textColor = getResources().getColor(color.getTextColor());
             String htmlColor = String.format(Locale.US, "#%06X", (0xFFFFFF & Color.argb(0, Color.red(textColor), Color.green(textColor), Color.blue(textColor))));

@@ -8,7 +8,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.text.Html;
 import java.util.Locale;
 import at.wada811.android.material.design.colors.sample.color.ColorPalette;
-import at.wada811.android.material.design.colors.sample.color.MaterialDesignColor;
+import at.wada811.android.material.design.colors.sample.color.ColorPalette.ColorGroup;
 
 
 public class ItemListActivity extends ActionBarActivity implements ItemListFragment.Callbacks{
@@ -37,7 +37,7 @@ public class ItemListActivity extends ActionBarActivity implements ItemListFragm
     public void onItemSelected(int position){
         if(isTwoPane){
 
-            MaterialDesignColor color = ColorPalette.ITEMS.get(position);
+            ColorGroup color = ColorPalette.ITEMS.get(position);
             String titleText = getResources().getString(color.getColorName());
             int textColor = getResources().getColor(color.getTextColor());
             int hexColor = (0xFFFFFF & Color.argb(0, Color.red(textColor), Color.green(textColor), Color.blue(textColor)));

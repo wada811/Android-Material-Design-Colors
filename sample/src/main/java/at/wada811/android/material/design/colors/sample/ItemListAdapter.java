@@ -7,11 +7,11 @@ import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import java.util.List;
-import at.wada811.android.material.design.colors.sample.color.MaterialDesignColor;
+import at.wada811.android.material.design.colors.sample.color.ColorPalette.ColorGroup;
 
-public class ItemListAdapter extends BindableAdapter<MaterialDesignColor>{
+public class ItemListAdapter extends BindableAdapter<ColorGroup>{
 
-    public ItemListAdapter(Context context, List<MaterialDesignColor> items){
+    public ItemListAdapter(Context context, List<ColorGroup> items){
         super(context, items);
     }
 
@@ -24,7 +24,7 @@ public class ItemListAdapter extends BindableAdapter<MaterialDesignColor>{
     }
 
     @Override
-    public void bindView(MaterialDesignColor item, int position, View view){
+    public void bindView(ColorGroup item, int position, View view){
         ViewHolder holder = (ViewHolder)view.getTag();
         holder.item.setBackgroundColor(getContext().getResources().getColor(item.getColor()));
         holder.name.setText(item.getColorName());
