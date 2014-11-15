@@ -6,6 +6,7 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.ListFragment;
 import android.view.View;
 import android.widget.ListView;
+import android.widget.Toast;
 import java.util.List;
 import at.wada811.android.material.design.colors.sample.color.ColorPalette;
 import at.wada811.android.material.design.colors.sample.color.ColorPalette.ColorGroup;
@@ -46,7 +47,9 @@ public class ItemDetailFragment extends ListFragment{
     public void onListItemClick(ListView listView, View view, int position, long id){
         super.onListItemClick(listView, view, position, id);
         MaterialDesignColor color = items.get(position);
-        copyText(getActivity(), getString(color.getColorCode()));
+        String colorCode = getString(color.getColorCode());
+        copyText(getActivity(), colorCode);
+        Toast.makeText(getActivity(), "Copied color code: " + colorCode, Toast.LENGTH_SHORT).show();
     }
 
     public void copyText(Context context, String text){
@@ -60,7 +63,7 @@ public class ItemDetailFragment extends ListFragment{
                 Context.CLIPBOARD_SERVICE
             );
             android.content.ClipData clip = android.content.ClipData.newPlainText(
-                "Copied Text", text
+                "Copied color code", text
             );
             clipboard.setPrimaryClip(clip);
         }
