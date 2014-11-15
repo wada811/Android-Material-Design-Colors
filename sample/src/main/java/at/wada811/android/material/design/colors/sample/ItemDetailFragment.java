@@ -49,6 +49,7 @@ public class ItemDetailFragment extends ListFragment{
         Toast.makeText(getActivity(), "Copied color code: " + colorCode, Toast.LENGTH_SHORT).show();
     }
 
+    @SuppressWarnings("deprecation")
     public void copyText(Context context, String text){
         if(android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.HONEYCOMB){
             android.text.ClipboardManager clipboard = (android.text.ClipboardManager)context.getSystemService(
