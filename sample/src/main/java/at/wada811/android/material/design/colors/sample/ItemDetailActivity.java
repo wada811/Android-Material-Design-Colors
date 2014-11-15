@@ -10,12 +10,12 @@ import android.text.Html;
 import android.view.MenuItem;
 import java.util.Locale;
 import at.wada811.android.material.design.colors.sample.color.ColorPalette;
-import at.wada811.android.material.design.colors.sample.color.MaterialDesignColor;
+import at.wada811.android.material.design.colors.sample.color.ColorPalette.ColorGroup;
 
-public class ItemDetailActivity extends ActionBarActivity {
+public class ItemDetailActivity extends ActionBarActivity{
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_item_detail);
 
@@ -24,9 +24,9 @@ public class ItemDetailActivity extends ActionBarActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
-        if (savedInstanceState == null) {
+        if(savedInstanceState == null){
             int position = getIntent().getIntExtra(ItemDetailFragment.ARG_ITEM_ID, 0);
-            MaterialDesignColor color = ColorPalette.ITEMS.get(position);
+            ColorGroup color = ColorPalette.ITEMS.get(position);
             String titleText = getResources().getString(color.getColorName());
             int textColor = getResources().getColor(color.getTextColor());
             String htmlColor = String.format(Locale.US, "#%06X", (0xFFFFFF & Color.argb(0, Color.red(textColor), Color.green(textColor), Color.blue(textColor))));
@@ -39,15 +39,15 @@ public class ItemDetailActivity extends ActionBarActivity {
             ItemDetailFragment fragment = new ItemDetailFragment();
             fragment.setArguments(arguments);
             getSupportFragmentManager().beginTransaction()
-                    .add(R.id.item_detail_container, fragment)
-                    .commit();
+                .add(R.id.item_detail_container, fragment)
+                .commit();
         }
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
+    public boolean onOptionsItemSelected(MenuItem item){
         int id = item.getItemId();
-        if (id == android.R.id.home) {
+        if(id == android.R.id.home){
             NavUtils.navigateUpTo(this, new Intent(this, ItemListActivity.class));
             return true;
         }

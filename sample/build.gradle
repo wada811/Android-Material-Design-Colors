@@ -9,7 +9,7 @@ android {
         minSdkVersion 8
         targetSdkVersion 21
         versionCode getPropertiesVersionCode()
-        versionName "1.1.0"
+        versionName "1.2.0"
     }
     signingConfigs {
         release
