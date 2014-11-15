@@ -26,9 +26,8 @@ public class ItemListActivity extends ActionBarActivity implements ItemListFragm
             getSupportActionBar().setDisplayShowHomeEnabled(false);
             getSupportActionBar().setDisplayUseLogoEnabled(false);
 
-            ((ItemListFragment)getSupportFragmentManager().findFragmentById(R.id.item_list)).setActivateOnItemClick(
-                true
-            );
+            ItemListFragment itemListFragment = (ItemListFragment)getSupportFragmentManager().findFragmentById(R.id.item_list);
+            itemListFragment.setActivateOnItemClick(true);
             onItemSelected(0);
         }
     }
