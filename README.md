@@ -1,5 +1,6 @@
 Android-Material-Design-Colors
 ====
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Android--Material--Design--Colors-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/1231)
 
 Android-Material-Design-Colors provides [color definitions](https://github.com/wada811/Android-Material-Design-Colors/blob/master/library/src/main/res/values/colors.xml) of the Material Design.
 
