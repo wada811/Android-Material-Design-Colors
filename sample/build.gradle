@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 21
-    buildToolsVersion "21.0.1"
+    buildToolsVersion "21.1.2"
 
     defaultConfig {
         applicationId "at.wada811.android.material.design.colors.sample"
@@ -16,7 +16,7 @@ android {
     }
     buildTypes {
         release {
-            runProguard true
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.release
         }
@@ -54,7 +54,7 @@ android {
                     publish.dependsOn task
 
                     // Move ProGuard
-                    if (variant.buildType.runProguard) {
+                    if (variant.buildType.minifyEnabled) {
                         def copyTask = project.tasks.create("copy${variant.name.capitalize()}MappingText", Copy)
                         def buildTypeName = variant.buildType.name
                         copyTask.from(file("build/outputs/proguard/${buildTypeName}").path)
