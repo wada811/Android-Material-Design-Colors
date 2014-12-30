@@ -13,16 +13,16 @@ import at.wada811.android.material.design.colors.sample.color.ColorPalette.Color
 
 public class ItemListActivity extends ActionBarActivity implements ItemListFragment.Callbacks{
 
-    private boolean isTwoPane;
+    private boolean isTablet;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
 
-        isTwoPane = getResources().getBoolean(R.bool.isTwoPane);
-        setContentView(isTwoPane ? R.layout.activity_item_twopane : R.layout.activity_item_list);
+        isTablet = getResources().getBoolean(R.bool.isTablet);
+        setContentView(isTablet ? R.layout.activity_item_twopane : R.layout.activity_item_list);
 
-        if(isTwoPane){
+        if(isTablet){
             getSupportActionBar().setDisplayShowHomeEnabled(false);
             getSupportActionBar().setDisplayUseLogoEnabled(false);
 
@@ -34,7 +34,7 @@ public class ItemListActivity extends ActionBarActivity implements ItemListFragm
 
     @Override
     public void onItemSelected(int position){
-        if(isTwoPane){
+        if(isTablet){
 
             ColorGroup color = ColorPalette.ITEMS.get(position);
             String titleText = getResources().getString(color.getColorName());
