@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 21
-    buildToolsVersion "21.1.2"
+    compileSdkVersion 22
+    buildToolsVersion "22.0.0"
 
     defaultConfig {
         applicationId "at.wada811.android.material.design.colors.sample"
         minSdkVersion 8
-        targetSdkVersion 21
+        targetSdkVersion 22
         versionCode getPropertiesVersionCode()
         versionName "1.2.1"
     }
@@ -69,7 +69,7 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:21+'
+    compile 'com.android.support:appcompat-v7:22.0.0'
     compile project(':library')
 }
 
