@@ -8,7 +8,7 @@ android {
         applicationId "at.wada811.android.material.design.colors.sample"
         minSdkVersion 8
         targetSdkVersion 22
-        versionCode getPropertiesVersionCode()
+        versionCode 121
         versionName "1.2.1"
     }
     signingConfigs {
@@ -19,50 +19,6 @@ android {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.release
-        }
-    }
-
-    applicationVariants.all { variant ->
-        if (variant.buildType.name.equals("release")) {
-            variant.outputs.each { output ->
-                if (output.outputFile != null && output.outputFile.name.endsWith('.apk')) {
-                    // Increment version code
-                    println "incrementVersionCode"
-                    def Properties versionProps = new Properties()
-                    def versionPropsFile = file('version.properties')
-                    if (versionPropsFile.exists()) {
-                        versionProps.load(new FileInputStream(versionPropsFile))
-                    }
-                    def code = (versionProps['VERSION_CODE'] ?: "0").toInteger() + 1
-                    versionProps['VERSION_CODE'] = code.toString()
-                    versionProps.store(versionPropsFile.newWriter(), null)
-                    defaultConfig.versionCode = code
-
-                    def publish = project.tasks.create("publishAll")
-                    publish.dependsOn variant.assemble
-                    // Rename APK
-                    def applicationId = defaultConfig.applicationId
-                    def versionCode = defaultConfig.versionCode
-                    def versionName = defaultConfig.versionName
-                    def newName = "${applicationId}_v${versionName}_r${versionCode}.apk"
-
-                    // Copy and Rename APK
-                    def task = project.tasks.create("publish${variant.name.capitalize()}Apk", Copy)
-                    task.from(output.outputFile)
-                    task.rename(output.outputFile.name, newName)
-                    task.into(file("${variant.name}/apk").getAbsolutePath())
-                    publish.dependsOn task
-
-                    // Move ProGuard
-                    if (variant.buildType.minifyEnabled) {
-                        def copyTask = project.tasks.create("copy${variant.name.capitalize()}MappingText", Copy)
-                        def buildTypeName = variant.buildType.name
-                        copyTask.from(file("build/outputs/proguard/${buildTypeName}").path)
-                        copyTask.into(file("${variant.name}/proguard").getAbsolutePath())
-                        publish.dependsOn copyTask
-                    }
-                }
-            }
         }
     }
 }
@@ -85,15 +41,4 @@ if (project.hasProperty('keyAlias')) {
 }
 if (project.hasProperty('keyPassword')) {
     android.signingConfigs.release.keyPassword = keyPassword
-}
-
-def getPropertiesVersionCode() {
-    println "getPropertiesVersionCode"
-    def Properties versionProps = new Properties()
-    def versionPropsFile = file('version.properties')
-    if (versionPropsFile.exists()) {
-        versionProps.load(new FileInputStream(versionPropsFile))
-    }
-    def code = (versionProps['VERSION_CODE'] ?: "0").toInteger()
-    return code
 }
