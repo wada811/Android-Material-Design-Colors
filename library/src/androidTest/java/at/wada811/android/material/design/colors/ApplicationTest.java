@@ -1,4 +1,4 @@
-package at.wada811.android.material.design.colors;
+package com.wada811.android.material.design.colors;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

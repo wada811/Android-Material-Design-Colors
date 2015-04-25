@@ -9,7 +9,7 @@
     tools:context=".ItemListActivity">
     <fragment
         android:id="@+id/item_list"
-        android:name="at.wada811.android.material.design.colors.sample.ItemListFragment"
+        android:name="com.wada811.android.material.design.colors.sample.ItemListFragment"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
