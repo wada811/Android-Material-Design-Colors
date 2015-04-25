@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Map;
 import at.wada811.android.material.design.colors.sample.R;
 
-public class ColorPalette{
+public class ColorPalette {
 
     public static List<ColorGroup> ITEMS = new ArrayList<ColorGroup>();
     public static Map<ColorGroup, List<MaterialDesignColor>> ITEM_MAP = new HashMap<ColorGroup, List<MaterialDesignColor>>();

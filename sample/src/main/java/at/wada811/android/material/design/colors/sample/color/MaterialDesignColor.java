@@ -2,12 +2,12 @@ package at.wada811.android.material.design.colors.sample.color;
 
 public interface MaterialDesignColor {
 
-    public int getColor();
+    int getColor();
 
-    public int getColorCode();
+    int getColorCode();
 
-    public int getColorName();
+    int getColorName();
 
-    public int getTextColor();
+    int getTextColor();
 
 }

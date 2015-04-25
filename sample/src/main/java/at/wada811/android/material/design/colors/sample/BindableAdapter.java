@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import java.util.List;
 
-public abstract class BindableAdapter<T> extends ArrayAdapter<T>{
+public abstract class BindableAdapter<T> extends ArrayAdapter<T> {
 
     private LayoutInflater inflater;
 

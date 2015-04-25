@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.ListView;
 import at.wada811.android.material.design.colors.sample.color.ColorPalette;
 
-public class ItemListFragment extends ListFragment{
+public class ItemListFragment extends ListFragment {
 
     private static final String STATE_ACTIVATED_POSITION = "activated_position";
 
@@ -15,12 +15,12 @@ public class ItemListFragment extends ListFragment{
 
     private int mActivatedPosition = ListView.INVALID_POSITION;
 
-    public interface Callbacks{
+    public interface Callbacks {
 
-        public void onItemSelected(int position);
+        void onItemSelected(int position);
     }
 
-    private static Callbacks sDummyCallbacks = new Callbacks(){
+    private static Callbacks sDummyCallbacks = new Callbacks() {
         @Override
         public void onItemSelected(int position){
         }
@@ -53,7 +53,7 @@ public class ItemListFragment extends ListFragment{
         super.onAttach(activity);
 
         // Activities containing this fragment must implement its callbacks.
-        if(activity instanceof Callbacks == false){
+        if(!(activity instanceof Callbacks)){
             throw new IllegalStateException("Activity must implement fragment's callbacks.");
         }
         mCallbacks = (Callbacks)activity;
@@ -81,9 +81,7 @@ public class ItemListFragment extends ListFragment{
     }
 
     public void setActivateOnItemClick(boolean activateOnItemClick){
-        getListView().setChoiceMode(
-            activateOnItemClick ? ListView.CHOICE_MODE_SINGLE : ListView.CHOICE_MODE_NONE
-        );
+        getListView().setChoiceMode(activateOnItemClick ? ListView.CHOICE_MODE_SINGLE : ListView.CHOICE_MODE_NONE);
     }
 
     private void setActivatedPosition(int position){

@@ -9,7 +9,7 @@ import android.widget.TextView;
 import java.util.List;
 import at.wada811.android.material.design.colors.sample.color.ColorPalette.ColorGroup;
 
-public class ItemListAdapter extends BindableAdapter<ColorGroup>{
+public class ItemListAdapter extends BindableAdapter<ColorGroup> {
 
     public ItemListAdapter(Context context, List<ColorGroup> items){
         super(context, items);
@@ -31,7 +31,7 @@ public class ItemListAdapter extends BindableAdapter<ColorGroup>{
         holder.name.setTextColor(getContext().getResources().getColor(item.getTextColor()));
     }
 
-    private class ViewHolder{
+    private class ViewHolder {
 
         RelativeLayout item;
         TextView name;

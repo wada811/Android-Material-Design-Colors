@@ -12,7 +12,7 @@ import at.wada811.android.material.design.colors.sample.color.ColorPalette;
 import at.wada811.android.material.design.colors.sample.color.ColorPalette.ColorGroup;
 import at.wada811.android.material.design.colors.sample.color.MaterialDesignColor;
 
-public class ItemDetailFragment extends ListFragment{
+public class ItemDetailFragment extends ListFragment {
 
     public static final String ARG_ITEM_ID = "item_id";
 
