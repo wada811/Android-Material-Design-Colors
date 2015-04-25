@@ -25,7 +25,7 @@ repositories {
 }
 
 dependencies {
-    compile 'com.wada811:android-material-design-colors:1.2.0'
+    compile 'com.wada811:android-material-design-colors:2.0.0'
 }
 ```
 
