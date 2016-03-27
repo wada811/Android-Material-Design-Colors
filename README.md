@@ -21,7 +21,7 @@ Adding it as a dependency to your project's build.gradle.
 
 ```groovy
 repositories {
-    maven { url 'http://raw.github.com/wada811/Android-Material-Design-Colors/master/repository/' }
+    maven { url 'http://github.com/wada811/Android-Material-Design-Colors/raw/master/repository/' }
 }
 
 dependencies {
