@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- red -->
-    <string name="md_red_50_color_code">#fde0dc</string>
-    <string name="md_red_100_color_code">#f9bdbb</string>
-    <string name="md_red_200_color_code">#f69988</string>
-    <string name="md_red_300_color_code">#f36c60</string>
-    <string name="md_red_400_color_code">#e84e40</string>
-    <string name="md_red_500_color_code">#e51c23</string>
-    <string name="md_red_600_color_code">#dd191d</string>
-    <string name="md_red_700_color_code">#d01716</string>
-    <string name="md_red_800_color_code">#c41411</string>
-    <string name="md_red_900_color_code">#b0120a</string>
-    <string name="md_red_a100_color_code">#ff7997</string>
-    <string name="md_red_a200_color_code">#ff5177</string>
-    <string name="md_red_a400_color_code">#ff2d6f</string>
-    <string name="md_red_a700_color_code">#e00032</string>
+    <string name="md_red_50_color_code">#ffebee</string>
+    <string name="md_red_100_color_code">#ffcdd2</string>
+    <string name="md_red_200_color_code">#ef9a9a</string>
+    <string name="md_red_300_color_code">#e57373</string>
+    <string name="md_red_400_color_code">#ef5350</string>
+    <string name="md_red_500_color_code">#f44336</string>
+    <string name="md_red_600_color_code">#e53935</string>
+    <string name="md_red_700_color_code">#d32f2f</string>
+    <string name="md_red_800_color_code">#c62828</string>
+    <string name="md_red_900_color_code">#b71c1c</string>
+    <string name="md_red_a100_color_code">#ff8a80</string>
+    <string name="md_red_a200_color_code">#ff5252</string>
+    <string name="md_red_a400_color_code">#ff1744</string>
+    <string name="md_red_a700_color_code">#d50000</string>
 
     <!-- pink -->
     <string name="md_pink_50_color_code">#fce4ec</string>
@@ -81,20 +81,20 @@
     <string name="md_indigo_a700_color_code">#304ffe</string>
 
     <!-- blue -->
-    <string name="md_blue_50_color_code">#e7e9fd</string>
-    <string name="md_blue_100_color_code">#d0d9ff</string>
-    <string name="md_blue_200_color_code">#afbfff</string>
-    <string name="md_blue_300_color_code">#91a7ff</string>
-    <string name="md_blue_400_color_code">#738ffe</string>
-    <string name="md_blue_500_color_code">#5677fc</string>
-    <string name="md_blue_600_color_code">#4e6cef</string>
-    <string name="md_blue_700_color_code">#455ede</string>
-    <string name="md_blue_800_color_code">#3b50ce</string>
-    <string name="md_blue_900_color_code">#2a36b1</string>
-    <string name="md_blue_a100_color_code">#a6baff</string>
-    <string name="md_blue_a200_color_code">#6889ff</string>
-    <string name="md_blue_a400_color_code">#4d73ff</string>
-    <string name="md_blue_a700_color_code">#4d69ff</string>
+    <string name="md_blue_50_color_code">#e3f2fd</string>
+    <string name="md_blue_100_color_code">#bbdefb</string>
+    <string name="md_blue_200_color_code">#90caf9</string>
+    <string name="md_blue_300_color_code">#64b5f6</string>
+    <string name="md_blue_400_color_code">#42a5f5</string>
+    <string name="md_blue_500_color_code">#2196f3</string>
+    <string name="md_blue_600_color_code">#1e88e5</string>
+    <string name="md_blue_700_color_code">#1976d2</string>
+    <string name="md_blue_800_color_code">#1565c0</string>
+    <string name="md_blue_900_color_code">#0d47a1</string>
+    <string name="md_blue_a100_color_code">#82b1ff</string>
+    <string name="md_blue_a200_color_code">#448aff</string>
+    <string name="md_blue_a400_color_code">#2979ff</string>
+    <string name="md_blue_a700_color_code">#2962ff</string>
 
     <!-- light_blue -->
     <string name="md_light_blue_50_color_code">#e1f5fe</string>
@@ -145,20 +145,20 @@
     <string name="md_teal_a700_color_code">#00bfa5</string>
 
     <!-- green -->
-    <string name="md_green_50_color_code">#d0f8ce</string>
-    <string name="md_green_100_color_code">#a3e9a4</string>
-    <string name="md_green_200_color_code">#72d572</string>
-    <string name="md_green_300_color_code">#42bd41</string>
-    <string name="md_green_400_color_code">#2baf2b</string>
-    <string name="md_green_500_color_code">#259b24</string>
-    <string name="md_green_600_color_code">#0a8f08</string>
-    <string name="md_green_700_color_code">#0a7e07</string>
-    <string name="md_green_800_color_code">#056f00</string>
-    <string name="md_green_900_color_code">#0d5302</string>
-    <string name="md_green_a100_color_code">#a2f78d</string>
-    <string name="md_green_a200_color_code">#5af158</string>
-    <string name="md_green_a400_color_code">#14e715</string>
-    <string name="md_green_a700_color_code">#12c700</string>
+    <string name="md_green_50_color_code">#e8f5e9</string>
+    <string name="md_green_100_color_code">#c8e6c9</string>
+    <string name="md_green_200_color_code">#a5d6a7</string>
+    <string name="md_green_300_color_code">#81c784</string>
+    <string name="md_green_400_color_code">#66bb6a</string>
+    <string name="md_green_500_color_code">#4caf50</string>
+    <string name="md_green_600_color_code">#43a047</string>
+    <string name="md_green_700_color_code">#388e3c</string>
+    <string name="md_green_800_color_code">#2e7d32</string>
+    <string name="md_green_900_color_code">#1b5e20</string>
+    <string name="md_green_a100_color_code">#b9f6ca</string>
+    <string name="md_green_a200_color_code">#69f0ae</string>
+    <string name="md_green_a400_color_code">#00e676</string>
+    <string name="md_green_a700_color_code">#00c853</string>
 
     <!-- light_green -->
     <string name="md_light_green_50_color_code">#f1f8e9</string>
